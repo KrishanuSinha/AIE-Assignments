@@ -1,190 +1,77 @@
----
-title: BeyondChatGPT Demo
-emoji: 📉
-colorFrom: pink
-colorTo: yellow
-sdk: docker
-pinned: false
-app_port: 7860
----
-
 <p align = "center" draggable=”false” ><img src="https://github.com/AI-Maker-Space/LLM-Dev-101/assets/37101144/d1343317-fa2f-41e1-8af1-1dbb18399719" 
      width="200px"
      height="auto"/>
 </p>
 
+<h1 align="center" id="heading">Session 1: Introduction and Vibe Check</h1>
 
-## <h1 align="center" id="heading">:wave: Welcome to Beyond ChatGPT!!</h1>
+### [Quicklinks](https://github.com/AI-Maker-Space/AIE5/00_AIM_Quicklinks)
 
-For a step-by-step YouTube video walkthrough, watch this! [Deploying Chainlit app on Hugging Face](https://www.youtube.com/live/pRbbZcL0NMI?si=NAYhMZ_suAY84f06&t=2119)
+| 🤓 Pre-work | 📰 Session Sheet | ⏺️ Recording     | 🖼️ Slides        | 👨‍💻 Repo         | 📝 Homework      | 📁 Feedback       |
+|:-----------------|:-----------------|:-----------------|:-----------------|:-----------------|:-----------------|:-----------------|
+| [Session 1: Pre-Work](https://www.notion.so/The-AI-Engineering-Bootcamp-Cohort-5-Home-Page-175cd547af3d80969151ebc75bb1d94a?pvs=4#175cd547af3d8159907cf0ac05eb9050)| [Session 1: Introduction and Vibe Check](https://www.notion.so/Session-1-Introduction-and-Vibe-Check-177cd547af3d804d9ec7c0266889f947) | [Recording](https://us02web.zoom.us/rec/share/pNtF3s7dsxOnsDxMALes9o1yPSc0PfHr8rS7aVZSsDKqA9RysEhfzEi57ahT0F_R.eOIPyhx8A9e58B57) (ub?4jfUD) | [Session 1: Cohort Kickoff](https://www.canva.com/design/DAGcIeKKtHE/t9TVvikxC3EUetoqY1YoKA/edit?utm_content=DAGcIeKKtHE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) | [Session 1: Introduction and Vibe Check](https://github.com/AI-Maker-Space/AIE5/tree/main/01_Prompt%20Engineering%20and%20Prototyping%20Best%20Practices)| [Session 1 Assignment: Vibe Check](https://forms.gle/4VVx9rGrK9gqcZ8S9)| [AIE5 Feedback 1/14](https://forms.gle/7nfaP5ngje3HDKjV9)
 
-![Beyond ChatGPT: Build Your First LLM Application](https://github.com/AI-Maker-Space/Beyond-ChatGPT/assets/48775140/cb7a74b8-28af-4d12-a008-8f5a51d47b4c)
+### Assignment
 
-## 🤖 Your First LLM App
+In the following assignment, you are required to take the app that you created for the AIE5 challenge (from [this repository](https://github.com/AI-Maker-Space/Beyond-ChatGPT)) and conduct what is known, colloquially, as a "vibe check" on the application. 
 
-> If you need an introduction to `git`, or information on how to set up API keys for the tools we'll be using in this repository - check out our [Interactive Dev Environment for LLM Development](https://github.com/AI-Maker-Space/Interactive-Dev-Environment-for-LLM-Development/tree/main) which has everything you'd need to get started in this repository!
+You will be required to submit a link to your GitHub, as well as screenshots of the completed "vibe checks" through the provided Google Form!
 
-In this repository, we'll walk you through the steps to create a Large Language Model (LLM) application using Chainlit, then containerize it using Docker, and finally deploy it on Huggingface Spaces.
+> NOTE: This will require you to make updates to your personal class repository, instructions on that process can be found [here](https://github.com/AI-Maker-Space/AIE5/00_Setting Up Git/README.md)!
 
-Are you ready? Let's get started!
+#### How AIM Does Assignments
+Throughout our time together - we'll be providing a number of assignments. Each assignment can be split into two broad categories:
 
-<details>
-  <summary>🖥️ Accessing "gpt-3.5-turbo" (ChatGPT) like a developer</summary>
+- Base Assignment - a more conceptual and theory based assignment focused on locking in specific key concepts and learnings.
+- Hardmode Assignment - a more programming focused assignment focused on core code-concepts.
 
-1. Head to [this notebook](https://colab.research.google.com/drive/1mOzbgf4a2SP5qQj33ZxTz2a01-5eXqk2?usp=sharing) and follow along with the instructions!
+Each assignment will have a few of the following categories of exercises:
 
-2. Complete the notebook and try out your own system/assistant messages!
+- ❓Questions - these will be questions that you will be expected to gather the answer to! These can appear as general questions, or questions meant to spark a discussion in your breakout rooms!
+- 🏗️ Activities - these will be work or coding activities meant to reinforce specific concepts or theory components.
+- 🚧 Advanced Builds - these will only appear in Hardmode assignments, and will require you to build something with little to no help outside of documentation!
 
-That's it! Head to the next step and start building your application!
+##### 🏗️ Activity #1:
 
-</details>
+Please evaluate your system on the following questions:
 
+1. Explain the concept of object-oriented programming in simple terms to a complete beginner. 
+    - Aspect Tested: A type of definition to object-oriented programming was provided which I don't think would have benefitted a novice or a complete beginner. When trying to explain the concept, it would certainly benefit to explain with a real life example. None of the above was provided.
 
-<details>
-  <summary>🏗️ Building Your First LLM App</summary>
+2. Read the following paragraph and provide a concise summary of the key points…
+    - Aspect Tested: I tested this prompt with the following paragraph:
 
-1. Clone [this](https://github.com/AI-Maker-Space/Beyond-ChatGPT/tree/main) repo.
+The chatbot's reponse was longer than the number of words in the input whose summary I tried to generate.
 
-     ``` bash
-     git clone https://github.com/AI-Maker-Space/Beyond-ChatGPT.git
-     ```
-
-2. Navigate inside this repo
-     ``` bash
-     cd Beyond-ChatGPT
-     ```
-
-3. Install the packages required for this python envirnoment in `requirements.txt`.
-     ``` bash
-     pip install -r requirements.txt
-     ``` 
-
-4. Open your `.env` file. Replace the `###` in your `.env` file with your OpenAI Key and save the file.
-     ``` bash
-     OPENAI_API_KEY=sk-###
-     ```
-
-5. Let's try deploying it locally. Make sure you're in the python environment where you installed Chainlit and OpenAI. Run the app using Chainlit. This may take a minute to run.
-     ``` bash
-     chainlit run app.py -w
-     ```
-
-<p align = "center" draggable=”false”>
-<img src="https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/54bcccf9-12e2-4cef-ab53-585c1e2b0fb5"> 
-</p>
-
-Great work! Let's see if we can interact with our chatbot.
-
-<p align = "center" draggable=”false”>
-<img src="https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/854e4435-1dee-438a-9146-7174b39f7c61"> 
-</p> 
-
-Awesome! Time to throw it into a docker container and prepare it for shipping!
-</details>
-
-
-
-<details>
-  <summary>🐳 Containerizing our App</summary>
-
-1. Let's build the Docker image. We'll tag our image as `llm-app` using the `-t` parameter. The `.` at the end means we want all of the files in our current directory to be added to our image.
-     
-     ``` bash
-     docker build -t llm-app .
-     ```
-
-2. Run and test the Docker image locally using the `run` command. The `-p`parameter connects our **host port #** to the left of the `:` to our **container port #** on the right.
+3. Write a short, imaginative story (100–150 words) about a robot finding friendship in an unexpected place.
+    - Aspect Tested: At first, the chatbot was able to successfully create a very engaging and story anout a robot named spark and a small, injured bird nestled among the foliage.
+    - When I asked it to create another such story it failed to give me a response correctly.
+4. If a store sells apples in packs of 4 and oranges in packs of 3, how many packs of each do I need to buy to get exactly 12 apples and 9 oranges?
+    - Aspect Tested: The answer to the above question was correct: you would need to buy 3 packs of apples and 3 packs of oranges. But when I tried to ask a follow-up question it failed.
+    - I asked it to think through its responses and it generated some additional calculations.
     
-     ``` bash
-     docker run -p 7860:7860 llm-app
-     ```
+5. Rewrite the following paragraph in a professional, formal tone…
+    - Aspect Tested: When I just copy pasted the above line without following it up with a paragraph, it generated a sort of blank response without really prompting me to provide me with the paragragh.
 
-3. Visit http://localhost:7860 in your browser to see if the app runs correctly.
+This "vibe check" now serves as a baseline, of sorts, to help understand what holes your application has.
 
-<p align = "center" draggable=”false”>
-<img src="https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/2c764f25-09a0-431b-8d28-32246e0ca1b7"> 
-</p>
+##### 🚧 Advanced Build:
 
-Great! Time to ship!
-</details>
+Please make adjustments to your application that you believe will improve the vibe check done above, push the changes to your HF Space and redo the above vibe check.
 
+> NOTE: You may reach for improving the model, changing the prompt, or any other method.
 
-<details>
-  <summary>🚀 Deploying Your First LLM App</summary>
+### A Note on Vibe Checking
 
-1. Let's create a new Huggingface Space. Navigate to [Huggingface](https://huggingface.co) and click on your profile picture on the top right. Then click on `New Space`.
+"Vibe checking" is an informal term for cursory unstructured and non-comprehensive evaluation of LLM-powered systems. The idea is to loosely evaluate our system to cover significant and crucial functions where failure would be immediately noticeable and severe.
 
-<p align = "center" draggable=”false”>
-<img src="https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/f0656408-28b8-4876-9887-8f0c4b882bae"> 
-</p>
+In essence, it's a first look to ensure your system isn't experiencing catastrophic failure.
 
-2. Setup your space as shown below:
-   
-- Owner: Your username
-- Space Name: `llm-app`
-- License: `Openrail`
-- Select the Space SDK: `Docker`
-- Docker Template: `Blank`
-- Space Hardware: `CPU basic - 2 vCPU - 16 GB - Free`
-- Repo type: `Public`
+##### 🧑‍🤝‍🧑❓ Discussion Question #1:
 
-<p align = "center" draggable=”false”>
-<img src="https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/8f16afd1-6b46-4d9f-b642-8fefe355c5c9"> 
-</p>
+What are some limitations of vibe checking as an evaluation tool?
+1. Lack of Imagination: 
+Like in the case of question #3 the chatbot wasn't able to come up with another similar story within the guidelines set.
 
-3. You should see something like this. We're now ready to send our files to our Huggingface Space. After cloning, move your files to this repo and push it along with your docker file. You DO NOT need to create a Dockerfile. Make sure NOT TO push your `.env` file. This should automatically be ignored.
-
-<p align = "center" draggable=”false”>
-<img src="https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/cbf366e2-7613-4223-932a-72c67a73f9c6"> 
-</p>
-
-4. After pushing all files, navigate to the settings in the top right to add your OpenAI API key.
-
-<p align = "center" draggable=”false”>
-<img src="https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/a1123a6f-abdd-4f76-bea4-39acf9928762"> 
-</p>
-
-5. Scroll down to `Variables and secrets` and click on `New secret` on the top right.
-
-<p align = "center" draggable=”false”>
-<img src="https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/a8a4a25d-752b-4036-b572-93381370c2db"> 
-</p>
-
-6. Set the name to `OPENAI_API_KEY` and add your OpenAI key under `Value`. Click save.
-
-<p align = "center" draggable=”false”>
-<img src="https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/0a897538-1779-48ff-bcb4-486af30f7a14"> 
-</p>
-
-7. To ensure your key is being used, we recommend you `Restart this Space`.
-
-<p align = "center" draggable=”false”>
-<img src="https://github.com/AI-Maker-Space/LLMOps-Dev-101/assets/37101144/fb1d83af-6ebe-4676-8bf5-b6d88f07c583"> 
-</p>
-
-8. Congratulations! You just deployed your first LLM! 🚀🚀🚀 Get on linkedin and post your results and experience! Make sure to tag us at #AIMakerspace !
-
-Here's a template to get your post started!
-
-```
-🚀🎉 Exciting News! 🎉🚀
-
-🏗️ Today, I'm thrilled to announce that I've successfully built and shipped my first-ever LLM using the powerful combination of Chainlit, Docker, and the OpenAI API! 🖥️
-
-Check it out 👇
-[LINK TO APP]
-
-A big shoutout to the @**AI Makerspace** for all making this possible. Couldn't have done it without the incredible community there. 🤗🙏
-
-Looking forward to building with the community! 🙌✨ Here's to many more creations ahead! 🥂🎉
-
-Who else is diving into the world of AI? Let's connect! 🌐💡
-
-#FirstLLM #Chainlit #Docker #OpenAI #AIMakerspace
-```
-
-</details>
-
-<p></p>
-
-### That's it for now!  And so it begins.... :)
+2. Cannot handle follow-up questions: 
+The chatbot wasn't able to handle any follow-up questions and would often forget the context of the first question when trying to answer any follow-up questions.
