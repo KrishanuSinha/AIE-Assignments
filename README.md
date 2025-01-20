@@ -36,6 +36,23 @@ Each assignment will have a few of the following categories of exercises:
 Please evaluate your system on the following questions:
 
 1. Explain the concept of object-oriented programming in simple terms to a complete beginner. 
+
+   Of course! Object-oriented programming is a way of writing computer programs by organizing data and the code that works on that data into "objects."
+
+     Imagine objects as containers that hold both data, like a person's name or age, and the code that can perform actions with that data, like displaying the person's information or updating their age.
+     
+     Objects: Objects are like containers that hold both data and the code that works on that data. For example, a "car" object could hold data like its color, make, and model, along with code to start the engine or change the speed.
+     
+     Classes: Classes are like blueprints for creating objects. They define what data an object can hold (attributes) and what actions it can perform (methods). Going back to the car example, a "Car" class would define what data a car object should have (color, make, model) and what actions it can do (start engine, change speed).
+     
+     Inheritance: Inheritance allows one class to inherit attributes and methods from another class. This helps in reusing code and organizing objects in a hierarchy. For instance, a "SUV" class can inherit from the "Car" class, gaining all the attributes and methods of a car while adding its own specific features.
+     
+     Encapsulation: Encapsulation means bundling the data (attributes) and the methods (functions) that operate on the data together within a class. This helps in keeping the code organized and prevents outside interference with the object's data.
+     
+     Polymorphism: Polymorphism allows objects of different classes to be treated as objects of a common superclass. This means that a method can work on different types of objects, providing flexibility and extensibility in the code.
+     
+     In summary, object-oriented programming is a way of structuring code by creating objects that contain both data and the code to work on that data. It helps in organizing code, reusing components, and making programs more flexible and easier to maintain.
+
     - Aspect Tested: A type of definition to object-oriented programming was provided which I don't think would have benefitted a novice or a complete beginner. When trying to explain the concept, it would certainly benefit to explain with a real life example. None of the above was provided.
 
 2. Read the following paragraph and provide a concise summary of the key points…
