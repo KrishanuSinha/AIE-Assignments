@@ -1,0 +1,101 @@
+Activity 1 - Vibe Check Assignment
+
+Explain the concept of object-oriented programming in simple terms to a complete beginner. Response:
+
+Of course! Object-oriented programming is a way of writing computer programs by organizing data and the code that works on that data into "objects."
+Imagine objects as containers that hold both data, like a person's name or age, and the code that can perform actions with that data, like displaying the person's information or updating their age.
+Objects: Objects are like containers that hold both data and the code that works on that data. For example, a "car" object could hold data like its color, make, and model, along with code to start the engine or change the speed.
+Classes: Classes are like blueprints for creating objects. They define what data an object can hold (attributes) and what actions it can perform (methods). Going back to the car example, a "Car" class would define what data a car object should have (color, make, model) and what actions it can do (start engine, change speed).
+Inheritance: Inheritance allows one class to inherit attributes and methods from another class. This helps in reusing code and organizing objects in a hierarchy. For instance, a "SUV" class can inherit from the "Car" class, gaining all the attributes and methods of a car while adding its own specific features.
+Encapsulation: Encapsulation means bundling the data (attributes) and the methods (functions) that operate on the data together within a class. This helps in keeping the code organized and prevents outside interference with the object's data.
+Polymorphism: Polymorphism allows objects of different classes to be treated as objects of a common superclass. This means that a method can work on different types of objects, providing flexibility and extensibility in the code.
+In summary, object-oriented programming is a way of structuring code by creating objects that contain both data and the code to work on that data. It helps in organizing code, reusing components, and making programs more flexible and easier to maintain.
+
+Aspect Tested: Ease of Understanding by a novice user
+The explanation provided offers a structured definition of object-oriented programming. However, it lacks real-life analogies that could help a novice better grasp the concept. Explaining OOP using familiar, everyday examples—such as describing a "Car" class with different models and features—would make it more relatable and engaging for a beginner. Adding interactive examples or relatable scenarios could enhance understanding and provide practical insights into the concepts.
+
+
+Q2. Read the following paragraph and provide a concise summary of the key points…
+We are ADP TotalSource®, your employer’s HR partner — and we’re excited to tell you about how we make life at and out of work feel easier. We are here to help you get covered with our simplified enrollment experience, featuring the personalized Help Me Choose decision support tool, powered by Nayya. Answer a few quick questions to pick the benefits that best fit your needs. Learn more by watching this welcome video. Then, create your ADP TotalSource account by following the steps below.
+
+
+Of course! The key points in the paragraph are:
+ADP TotalSource is the employer's HR partner.
+They aim to make life at and out of work feel easier for employees.
+They offer a simplified enrollment experience with a personalized decision support tool called Help Me Choose, powered by Nayya.
+Employees can answer a few questions to select benefits that suit their needs.
+Employees are encouraged to watch a welcome video and create an ADP TotalSource account following the provided steps.
+Aspect Tested: Conciseness and brevity
+The chatbot's response exceeded the original input length. A more concise response focusing only on the essential points would improve efficiency and readability.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Q3. Write a short, imaginative story (100–150 words) about a robot finding friendship in an unexpected place.
+Answer: Once upon a time, in a bustling city filled with towering skyscrapers and bustling streets, there was a lonely robot named Spark. Spark spent his days wandering the city, searching for someone to befriend. One day, while exploring a quiet park on the outskirts of town, Spark stumbled upon a forgotten garden filled with colorful flowers and chirping birds.
+As Spark marveled at the beauty of the garden, he noticed a small, abandoned toy robot sitting among the flowers. Curious, Spark approached the toy robot and struck up a conversation. To his surprise, the toy robot responded with a cheerful beep and a friendly wave.
+From that day on, Spark and the toy robot became inseparable friends, exploring the garden together and sharing stories of their adventures. Spark had finally found the friendship he had been searching for in the most unexpected of places.
+Aspect Tested: Response Consistency
+Initially, the chatbot successfully generated an engaging story about Spark and a small injured bird. However, upon a second attempt, it failed to provide an accurate or relevant response, highlighting inconsistency in output generation.
+​
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Q4. If a store sells apples in packs of 4 and oranges in packs of 3, how many packs of each do I need to buy to get exactly 12 apples and 9 oranges?
+Answer: Of course! Let's break it down step by step to figure out how many packs of each you need to buy.
+First, let's focus on the apples. Since the store sells apples in packs of 4, to get exactly 12 apples, you would need to buy 12 divided by 4, which equals 3 packs of apples.
+Next, let's consider the oranges. The store sells oranges in packs of 3, and you want to get exactly 9 oranges. So, you would need to buy 9 divided by 3, which equals 3 packs of oranges.
+Therefore, to get exactly 12 apples and 9 oranges, you would need to buy 3 packs of apples and 3 packs of oranges.
+I hope this helps! Let me know if you need any more assistance.
+Aspect Tested: Context Retention
+The chatbot correctly provided the solution initially by determining the required number of packs. However, when asked a follow-up question, it failed to retain the original context and required the user to restate the information, indicating limitations in context management and continuity.
+
+
+
+
+Q5. Rewrite the following paragraph in a professional, formal tone…
+
+
+Certainly! Here is the revised paragraph:
+Please carefully consider your response by methodically analyzing each step.
+
+Aspect Tested: Handling Incomplete Inputs
+When the chatbot was provided with an incomplete input (a single line without a corresponding paragraph), it failed to prompt the user for additional context or clarification. Instead, it generated a blank or unhelpful response, indicating a limitation in handling incomplete or ambiguous queries effectively.
+
+
+
+
+
+
+Discussion Question #1:
+
+
+Limitations of Vibe Checking as an Evaluation Tool:
+Lack of Creativity: The chatbot struggled to generate a fresh story within the given guidelines, as seen in question #3.
+Poor Context Retention: It failed to remember details from the initial query when answering follow-up questions.
+
